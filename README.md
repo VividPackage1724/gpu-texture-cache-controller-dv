@@ -30,7 +30,7 @@ Requirements: Synopsys VCS with SystemVerilog and assertion support.
 cd sim
 make vcs
 # or from repository root
-./scripts/run_regression.sh
+bash scripts/run_regression.sh
 ```
 
 The testbench runs directed cold-miss/hit/word-select/conflict/backpressure/reset tests followed by 100 randomized aligned reads. The backing-memory oracle is independent of the DUT's internal cache arrays.
