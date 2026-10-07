@@ -1,4 +1,4 @@
-timescale 1ns/1ps
+`timescale 1ns/1ps
 module tb_texture_cache;
   localparam int LINE_BYTES = 16;
   localparam int WORDS_PER_LINE = 4;
