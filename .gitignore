@@ -1,0 +1,6 @@
+sim/simv
+sim/simv.daidir/
+sim/csrc/
+sim/*.log
+sim/*.vpd
+sim/*.fsdb
