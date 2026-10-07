@@ -1,4 +1,4 @@
-timescale 1ns/1ps
+`timescale 1ns/1ps
 
 // Educational, single-outstanding-read, direct-mapped texture-cache model.
 // 4 lines x 16 bytes/line. CPU requests are aligned 32-bit word reads.
@@ -114,7 +114,7 @@ module texture_cache #(
     end
   end
 
-\`ifndef SYNTHESIS
+`ifndef SYNTHESIS
   // Protocol checks. A request is accepted only in IDLE and the response
   // payload must remain stable until the consumer accepts it.
   property p_response_stable_under_backpressure;
@@ -137,5 +137,5 @@ module texture_cache #(
   endproperty
   assert property (p_no_cpu_accept_while_busy)
     else $error("request accepted while busy");
-\`endif
+`endif
 endmodule
